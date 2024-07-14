@@ -1,0 +1,3 @@
+insert into tabla() select ... 
+
+select sysdate, sysdate+7 from dual;

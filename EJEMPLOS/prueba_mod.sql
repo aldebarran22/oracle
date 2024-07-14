@@ -1,0 +1,1 @@
+insert into tbcategorias(nombre) values('cine');
