@@ -41,7 +41,5 @@ select * from tbpedidos where cargo between &cargo_min and &cargo_max;
 create table tbpedidos_francia as (select * from tbpedidos where paisdestinatario='&Dame_un_pais');
 
 
-
-
 -- Select en el Where  (subconsultas). El nombre del producto más caro:
 SELECT Nombre, PRECIOUNIDAD FROM TBPRODUCTOS WHERE PRECIOUNIDAD = (SELECT MAX(PRECIOUNIDAD) FROM TBPRODUCTOS);
