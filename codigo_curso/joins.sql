@@ -75,8 +75,13 @@ select nvl(null, 200) as valor from dual;
 
 
 
+-- Producto cartesiano
+select count(*) from tbcategorias;
+select count(*) from tbproductos;
 
+select 15*77 from dual;
 
+select count(*) from tbcategorias c, tbproductos p;
 
 
 
