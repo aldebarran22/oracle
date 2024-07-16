@@ -5,6 +5,7 @@ set serveroutput on;
 declare
 
 contador number := 1;
+importe integer;
 
 begin
 
@@ -24,5 +25,16 @@ loop
     end if;
 
 end loop;
+
+-- Bucle loop para validar valores múltiplos de 10:
+-- El bucle termina cuando tecleamos un valor correcto
+
+importe := &introducir_importe;
+if mod(importe, 10)=0 then
+    dbms_output.put_line('Valor correcto: ' || importe);
+else
+    dbms_output.put_line('Introduzca un valor múltiplo de 10');
+end if;
+
 end;
 /
