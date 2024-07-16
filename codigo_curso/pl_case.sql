@@ -12,8 +12,7 @@ begin
     from TBCOMPAÑIASENVIOS e inner join tbpedidos p on e.id = p.idcompanya
     where e.id=2
     group by e.nombre;    
-    
-        
+            
     case
     when cuenta between 150 and 250 then tipo := 'Simple';
     when cuenta  between 251 and 300 then tipo := 'Normal';
